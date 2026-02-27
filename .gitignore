@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local env
+.venv/
+
+# OS/editor
+.DS_Store
+.vscode/
+
+# Generated experiment artifacts and large local datasets
+crossing-reduction/runs/
+crossing-reduction/runs_smoke/
+crossing-reduction/tb_knots/
+crossing-reduction/__pycache__/
+crossing-reduction/3-16.txt
+crossing-reduction/runs/*.log

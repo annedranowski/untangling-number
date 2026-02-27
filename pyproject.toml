@@ -1,0 +1,30 @@
+[project]
+name = "colab-knot-untying-rl"
+version = "0.1.0"
+requires-python = ">= 3.13,<3.14"
+authors = [
+    { name = "Anne Dranowski", email = "anne.dranowski@gmail.com" },
+]
+dependencies = [
+    "gymnasium>=0.29",
+    "stable-baselines3>=2.3.0",
+    "stable-baselines3[extra]",
+    "torch>=2.2.0",
+    "spherogram",
+    "gcsfs",
+    "numpy",
+    "pyarrow>=16",
+    "snappy",
+    "snappy-manifolds",
+    "tensorboard>=2.16",
+    "tqdm>=4.66",
+    "rich>=13.7"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pandas>=2.2",
+    "matplotlib>=3.8",
+    "jupyterlab>=4.2",
+    "ipykernel>=6.29",
+]
