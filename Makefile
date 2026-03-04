@@ -18,7 +18,7 @@ smoke:
 	uv run python crossing-reduction/run_variant_sweep.py \
 		--base $(BASE) \
 		--pd-path crossing-reduction/generated_T_pd_backtrack_1M.parquet \
-		--flips 5 \
+		--flips 3 \
 		--max-pds 3 \
 		--max-variants 500 \
 		--workers 2 \
@@ -29,7 +29,7 @@ sweep:
 	uv run python crossing-reduction/run_variant_sweep.py \
 		--base $(BASE) \
 		--pd-path crossing-reduction/generated_T_pd_backtrack_1M.parquet \
-		--flips 5
+		--flips 3
 
 summarize:
 	@test -n "$(RUN_DIR)" || (echo "Set RUN_DIR, e.g. make summarize RUN_DIR=crossing-reduction/runs/20260221_221918" && exit 1)
