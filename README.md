@@ -1,4 +1,4 @@
-# Untangling Number
+# Uncrossing Number
 
 Reproducible workflows for RL-based knot crossing reduction and variant sweep analysis.
 
